@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Game</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">TopUp<span>Classic</span></div>
+    <ul class="nav-links">
+      <li><a href="#catalog">Katalog</a></li>
+      <li><a href="#">Promo</a></li>
+      <li><a href="#">Cara Order</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Top Up Game <em>Favoritmu</em></h1>
+  <div class="divider"></div>
+  <p>Proses cepat, harga bersahabat, dan tersedia untuk semua game populer. Nikmati pengalaman top up yang elegan dan terpercaya.</p>
+</section>
+
+<main class="container" id="catalog">
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Cari game...">
+    </div>
+    <div class="filter-tabs">
+      <button class="tab active" data-filter="all">Semua</button>
+      <button class="tab" data-filter="moba">MOBA</button>
+      <button class="tab" data-filter="battle-royale">Battle Royale</button>
+      <button class="tab" data-filter="rpg">RPG</button>
+      <button class="tab" data-filter="fps">FPS</button>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</main>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h2 id="modal-title">Top Up</h2>
+    <p id="modal-desc">Masukkan ID dan server akun kamu.</p>
+    <input type="text" placeholder="User ID" id="userId">
+    <input type="text" placeholder="Server / Zone ID" id="serverId">
+    <button class="modal-submit" onclick="submitOrder()">Lanjutkan Pembayaran</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    © 2026 <span>TopUp Classic</span> — Dibuat dengan elegan untuk para gamer sejati.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
